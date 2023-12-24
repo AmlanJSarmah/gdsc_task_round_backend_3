@@ -51,5 +51,14 @@ def update_item(item_id):
         return jsonify({'status': 404, 'message': 'Item Not Found'})
 
 
+@app.route('/todo/<int:item_id>', methods=['DELETE'])
+def delete_item(item_id):
+    del_status = tl.delete_todo_item(item_id)
+    if del_status == 0:
+        return jsonify({'status': 200})
+    else:
+        return jsonify({'status': 404, 'message': 'Item Not Found'})
+
+
 if __name__ == '__main__':
     app.run()
