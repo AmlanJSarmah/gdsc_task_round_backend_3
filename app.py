@@ -1,14 +1,12 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 import todo_list_operations as tl
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    todo_list_element = tl.get_todo_list()
-    return jsonify({'data': todo_list_element, 'status': 200})
-
+def todo_list_base():
+    return redirect('/todo')
 
 @app.route('/todo', methods=['GET'])
 def todo_list():
