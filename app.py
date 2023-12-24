@@ -6,7 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    todo_list_element = tl.get_todo_list()
+    return jsonify({'data': todo_list_element, 'status': 200})
 
 
 @app.route('/todo', methods=['GET'])
