@@ -1,6 +1,10 @@
 # gdsc_task_round_backend_3
 A API for todo list management that can perform CRUD operation
 
+## Try the API
+TO try the API please click [hear](http://amlanjsarmah.pythonanywhere.com/)  
+If you get a gortiguard error in **college wifi** please use mobile data for testing
+
 ## Installation
 1. Set up a virtual environment and install the packages in `requirements.txt`
 ```
