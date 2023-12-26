@@ -2,7 +2,7 @@
 A API for todo list management that can perform CRUD operation
 
 ## Try the API
-TO try the API please click [hear](http://amlanjsarmah.pythonanywhere.com/)  
+To try the API please click [hear](http://amlanjsarmah.pythonanywhere.com/)  
 If you get a fortiguard error in **college wifi** please use mobile data for testing
 
 ## Installation
